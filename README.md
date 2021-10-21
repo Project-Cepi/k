@@ -1,13 +1,54 @@
-# ExampleExtension
-[![license](https://img.shields.io/github/license/Project-Cepi/ExampleExtension?style=for-the-badge&color=b2204c)](../LICENSE)
+# k
+[![license](https://img.shields.io/github/license/Project-Cepi/k?style=for-the-badge&color=b2204c)](../LICENSE)
 [![wiki](https://img.shields.io/badge/documentation-wiki-74aad6?style=for-the-badge)](https://project-cepi.github.io/)
 [![discord-banner](https://img.shields.io/discord/706185253441634317?label=discord&style=for-the-badge&color=7289da)](https://discord.cepi.world/8K8WMGV)
 
-An example extension for Minestom based off of Sabre/kotlin libs.
+Kotlin debugging evaulator in Minestom.
+
+## Usage
+
+### Shorthand
+`/k println("Hello World!")`
+
+This is the equivalent of
+`/ko add println("Hello World!")`
+`/ko eval`
+`/ko dump`
+
+NOTE: This won't actually run `ko` commands, and your current ko session will be safe.
+
+### Longhand
+
+You can use these to build longer test scripts
+
+`/ko import (import)` - import anything, same format as code: * works as well
+
+`/ko add (line)` - append a new line to the script
+
+`/ko insert (index) (line)` - insert a line to the script
+
+`/ko show` - prints the entire script
+
+`/ko eval` - evaulates the script
+
+`/ko dump` - erases all stored script, with a copy and paste to copy your script.
+
+`/ko undo` - undo an action
+
+`/ko redo` - redo an action
+
+
+### Tips
+
+You can get your current self using `player`.
+
+`println` automatically redirects to your own output.
+
+`mini` also redirects to your own output in colored text.
 
 ## Installation
 
-Download the jar from [Releases](https://github.com/Project-Cepi/ExampleExtension/releases)
+Download the jar from [Releases](https://github.com/Project-Cepi/k/releases)
 OR compile it yourself. Instructions to do so are in Compile header
 
 Drop it into the `/extensions` folder.
@@ -17,7 +58,7 @@ Drop it into the `/extensions` folder.
 Create a folder, then
 Clone the repository using:
 
-`git clone https://github.com/Project-Cepi/ExampleExtension.git`
+`git clone https://github.com/Project-Cepi/k.git`
 
 Once it is cloned, make sure you have gradle installed, and run
 
