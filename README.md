@@ -42,9 +42,9 @@ You can use these to build longer test scripts
 
 You can get your current self using `player`.
 
-`println` automatically redirects to your own output.
+`println(String)` automatically redirects to your own output.
 
-`mini` also redirects to your own output in colored text.
+`mini(String)` also redirects to your own output in colored text using the Adventure MiniMessage format.
 
 ## Installation
 
