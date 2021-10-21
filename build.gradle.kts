@@ -44,7 +44,9 @@ dependencies {
     compileOnly("com.github.Project-Cepi:KStom:5daaf786cf")
 
     // Add Scripting Engine
-    implementation("org.jetbrains.kotlin:kotlin-scripting-jsr223:1.5.31")
+    implementation(kotlin("scripting-jsr223"))
+    implementation(kotlin("scripting-jvm"))
+    implementation(kotlin("scripting-compiler"))
 
     // import kotlinx serialization
     compileOnly("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.0")

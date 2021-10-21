@@ -1,6 +1,6 @@
 {
-  "entrypoint": "${project.group}.${project.mainClass}",
-  "name": "${project.name}",
+  "entrypoint": "world.cepi.k.KExtension",
+  "name": "kext",
   "version": "${project.version}",
   "dependencies": [
     "KStom"

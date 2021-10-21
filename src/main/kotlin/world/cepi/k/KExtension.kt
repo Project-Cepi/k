@@ -3,7 +3,7 @@ package world.cepi.k
 import net.minestom.server.extensions.Extension;
 import world.cepi.k.commands.KCommand
 
-class K : Extension() {
+class KExtension : Extension() {
 
     override fun initialize() {
 

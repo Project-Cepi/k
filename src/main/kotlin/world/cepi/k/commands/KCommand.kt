@@ -13,5 +13,6 @@ object KCommand : Kommand({
         val engine = ScriptEngineManager().getEngineByExtension("kts")
         engine.setBindings(engine.createBindings(), ScriptContext.GLOBAL_SCOPE)
         engine.getBindings(ScriptContext.GLOBAL_SCOPE)["player"] = player
+        engine.eval(!args)
     }
 }, "k")
