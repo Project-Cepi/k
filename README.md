@@ -7,6 +7,12 @@ Kotlin debugging evaulator in Minestom.
 
 ## Usage
 
+/k is shorthand, /ko is longhand
+
+requires the permission "k.ok" and "k.store" for running scripts and storing them in the server, respectifully
+
+OP overrides these two requirements.
+
 ### Shorthand
 `/k println("Hello World!")`
 
@@ -27,7 +33,7 @@ You can use these to build longer test scripts
 
 `/ko insert (index) (line)` - insert a line to the script
 
-`/ko show` - prints the entire script
+`/ko show` - sends the entire script to you
 
 `/ko eval` - evaulates the script
 
@@ -38,13 +44,15 @@ You can use these to build longer test scripts
 `/ko redo` - redo an action
 
 
-### Tips
+### Extra Functions / Variables
 
 You can get your current self using `player`.
 
 `println(String)` automatically redirects to your own output.
 
 `mini(String)` also redirects to your own output in colored text using the Adventure MiniMessage format.
+
+`execute(String)` executes a command as you.
 
 ## Installation
 
