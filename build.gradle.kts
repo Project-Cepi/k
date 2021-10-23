@@ -45,12 +45,16 @@ dependencies {
 
     // Add Scripting Engine
     implementation(kotlin("scripting-jsr223"))
-
-    implementation(kotlin("compiler"))
+    implementation(kotlin("compiler-embeddable"))
+    implementation(kotlin("scripting-jvm-host"))
+    implementation(kotlin("scripting-jvm"))
+    implementation(kotlin("scripting-common"))
     implementation(kotlin("script-runtime"))
     implementation(kotlin("script-util"))
-    implementation(kotlin("compiler-embeddable"))
 
+    // Use the kotlin test library
+    testImplementation("io.kotest:kotest-assertions-core:4.6.3")
+    testImplementation("io.kotest:kotest-runner-junit5:4.6.3")
 
     // import kotlinx serialization
     compileOnly("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.0")
