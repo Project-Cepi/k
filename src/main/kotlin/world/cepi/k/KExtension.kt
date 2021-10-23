@@ -7,6 +7,8 @@ class KExtension : Extension() {
 
     override fun initialize() {
 
+
+
         KCommand.register()
 
         logger.info("[K] has been enabled!")
