@@ -51,6 +51,8 @@ dependencies {
     implementation(kotlin("scripting-common"))
     implementation(kotlin("script-runtime"))
     implementation(kotlin("script-util"))
+    implementation(kotlin("script-runtime"))
+    implementation(kotlin("scripting-compiler-embeddable"))
 
     // Use the kotlin test library
     testImplementation("io.kotest:kotest-assertions-core:4.6.3")

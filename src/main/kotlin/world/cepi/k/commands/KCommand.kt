@@ -3,10 +3,8 @@ package world.cepi.k.commands
 import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.format.NamedTextColor
 import net.minestom.server.command.builder.arguments.ArgumentType
-import world.cepi.k.KTSFactory
 import world.cepi.kstom.command.kommand.Kommand
 import javax.script.*
-
 
 object KCommand : Kommand({
 
@@ -16,7 +14,7 @@ object KCommand : Kommand({
 
         val benchmark = System.currentTimeMillis()
 
-        val engine = KTSFactory().scriptEngine
+        val engine = ScriptEngineManager().getEngineByExtension("kts")
         engine.setBindings(engine.createBindings(), ScriptContext.GLOBAL_SCOPE)
         engine.getBindings(ScriptContext.GLOBAL_SCOPE)["player"] = player
         val output = engine.eval(!args)
