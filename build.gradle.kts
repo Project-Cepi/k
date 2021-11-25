@@ -56,7 +56,7 @@ dependencies {
 
     // Use the kotlin test library
     testImplementation("io.kotest:kotest-assertions-core:4.6.3")
-    testImplementation("io.kotest:kotest-runner-junit5:4.6.3")
+    testImplementation("io.kotest:kotest-runner-junit5:5.0.0")
 
     // import kotlinx serialization
     compileOnly("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.1")
