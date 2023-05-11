@@ -59,7 +59,7 @@ dependencies {
     testImplementation("io.kotest:kotest-runner-junit5:5.6.2")
 
     // import kotlinx serialization
-    compileOnly("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0")
+    compileOnly("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
 }
 
 configurations {
