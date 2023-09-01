@@ -55,7 +55,7 @@ dependencies {
     implementation(kotlin("scripting-compiler-embeddable"))
 
     // Use the kotlin test library
-    testImplementation("io.kotest:kotest-assertions-core:5.6.2")
+    testImplementation("io.kotest:kotest-assertions-core:5.7.0")
     testImplementation("io.kotest:kotest-runner-junit5:5.7.0")
 
     // import kotlinx serialization
